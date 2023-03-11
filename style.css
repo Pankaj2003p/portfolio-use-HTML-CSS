@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(79, 123, 123);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+nav img {
+    width: 10vw;
+    margin-left: 100px;
+}
+
+#nav-sec {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#nav-sec img {
+    height: 3vh;
+    width: auto;
+    position: absolute;
+    right: 130px;
+}
+
+#nav-sec ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    font-size: 18px;
+}
+
+#nav-sec ul li a {
+    text-decoration: none;
+    color: aqua;
+}
+
+#nav-sec input {
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#nav-sec #last .ham {
+    background-color: black;
+    height: 5px;
+    width: 42px;
+    margin-right: 60px;
+    border: 2px solid rgb(79, 123, 123);
+    border-radius: 5px;
+}
+
+#nav-sec ul li a:hover {
+    color: rgb(229, 245, 13);
+    text-decoration: underline;
+}
+
+main #fast {
+    display: flex;
+    font-size: 20px;
+    margin: 25px;
+}
+
+main .text {
+    margin-top: 150px;
+}
+
+.head {
+    display: flex;
+    gap: 10px;
+    font-size: 40px;
+}
+
+.head .naam {
+    color: rgb(172, 10, 10);
+}
+
+main .img12 img {
+    height: 85vh;
+    width: auto;
+    filter: drop-shadow(5px 10px black);
+}
+
+main .title {
+    /* position: absolute;
+    top: 600px;
+    left: 580px; */
+    text-align: center;
+    font-size: 25px;
+}
+
+main #box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+main #box .onbox1 {
+    width: 20.6vw;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px 10px rgb(15, 46, 46);
+    border-radius: 6px;
+}
+
+main #box .onbox2 {
+    width: 20.9vw;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px 10px rgb(15, 46, 46);
+    border-radius: 6px;
+}
+
+main #box .onbox3 {
+    width: 22.3vw;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px 10px rgb(15, 46, 46);
+    border-radius: 6px;
+}
+
+#box .onbox1 img {
+    height: 30vh;
+    width: auto;
+    border-radius: 6px;
+}
+
+#box .onbox2 img {
+    height: 30vh;
+    width: auto;
+    border-radius: 6px;
+}
+
+#box .onbox3 img {
+    height: 30vh;
+    width: auto;
+    border-radius: 6px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 17px;
+}
+
+footer .foo2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .foo2 .img1 {
+    height: 3vh;
+    width: auto;
+}
+
+footer .foo2 .img2 {
+    height: 4vh;
+    width: auto;
+}
+
+footer .foo2 .img3 {
+    height: 3.5vh;
+    width: auto;
+}
+
+footer .foo2 .img4 {
+    height: 3.3vh;
+    width: auto;
+}
+
+@media screen and (max-width:1300px) {
+    #box .onbox1 img {
+        height: 20.6vh;
+        width: auto;
+    }
+
+    #box .onbox2 img {
+        height: 22.3vh;
+        width: auto;
+    }
+
+    #box .onbox3 img {
+        height: 22.3vh;
+        width: auto;
+    }
+
+    main .title {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .head {
+        display: flex;
+        gap: 8px;
+        font-size: 30px;
+    }
+
+    #fast .text h1 {
+        font-size: 25px;
+    }
+
+    main #box .onbox1 {
+        width: 20vw;
+    }
+
+    main #box .onbox2 {
+        width: 19.6vw;
+    }
+
+    main #box .onbox3 {
+        width: 21vw;
+    }
+}
+
+@media screen and (max-width:950px) {
+    nav img {
+        width: 20vw;
+        height: auto;
+        margin-left: 30px;
+    }
+
+    #nav-sec #last .ham {
+        height: 7.5px;
+        width: 45px;
+        margin-right: 20px;
+    }
+
+    #nav-sec img {
+        height: 2.5vh;
+        width: auto;
+        margin-right: -50px;
+    }
+
+    header ul li {
+        display: none;
+    }
+
+    header input {
+        display: none;
+    }
+
+    main {
+        margin-top: -85px;
+    }
+
+    main #fast .text {
+        font-size: 40px;
+    }
+
+    main #fast .img12 img {
+        display: none;
+    }
+
+    main #fast .text {
+        text-align: center;
+    }
+
+    main #fast .text .head {
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    main #fast .text h1 {
+        font-size: 35px;
+    }
+
+    main #box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .title {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    main #box .onbox1 {
+        width: 50vw;
+    }
+
+    main #box .onbox2 {
+        width: 50vw;
+    }
+
+    main #box .onbox3 {
+        width: 50vw;
+    }
+
+    #box .onbox3 img {
+        height: 21vh;
+        width: auto;
+    }
+
+    main #box p {
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 29px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+}
+
+@media screen and (max-width:820px) {
+    main #fast .text {
+        font-size: 30px;
+    }
+
+    #box .onbox1 img {
+        height: 22vh;
+        width: auto;
+    }
+
+    #box .onbox2 img {
+        height: 23.3vh;
+        width: auto;
+    }
+
+    #box .onbox3 img {
+        height: 21.7vh;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:550px) {
+    main #fast .text .head {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main #box .box1 {
+        width: 70vw;
+    }
+
+    main #box .box2 {
+        width: 70vw;
+    }
+
+    main #box .box3 {
+        width: 70vw;
+    }
+
+    main #box p {
+        font-size: 20px;
+    }
+
+    #box .onbox1 img {
+        height: 24vh;
+        width: auto;
+    }
+
+    #box .onbox2 img {
+        height: 25vh;
+        width: auto;
+    }
+
+    #box .onbox3 img {
+        height: 23.5vh;
+        width: auto;
+    }
+
+    footer {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    main {
+        margin-top: -95px;
+    }
+
+    main #fast .text {
+        font-size: 18px;
+    }
+
+    main #fast .text .head {
+        font-size: 25px;
+    }
+
+    main .title {
+        font-size: 20px;
+    }
+
+    main #box .onbox1 {
+        width: 100vw;
+        height: auto;
+        box-shadow: none;
+        border: 2px solid black;
+    }
+
+    main #box .onbox2 {
+        width: 100vw;
+        height: auto;
+        box-shadow: none;
+        border: 2px solid black;
+    }
+
+    main #box .onbox3 {
+        width: 100vw;
+        height: auto;
+        box-shadow: none;
+        border: 2px solid black;
+    }
+
+    #box .onbox1 img {
+        width: 100vw;
+        height: auto;
+    }
+
+    #box .onbox2 img {
+        width: 100vw;
+        height: auto;
+    }
+
+    #box .onbox3 img {
+        width: 100vw;
+        height: auto;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
